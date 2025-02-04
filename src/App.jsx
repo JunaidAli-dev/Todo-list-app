@@ -83,7 +83,10 @@ function App() {
           <input onChange={handleChange} value={todo} className='w-[100%] rounded-full p-[0.4%]' type="text" />
           <button onClick={handleAdd} disabled={todo.length<1} className='bg-violet-900 disabled:bg-[#343333] px-3 py-1 text-white rounded-full hover:bg-violet-950 w-1/4   text-sm font-bold'>Save</button>
         </div>
-        <input onChange={toggleFinished} type="checkbox" checked={ShowFinished} /> Show Finished
+        <div className='flex items-center justify-between'>
+        <div><input onChange={toggleFinished} type="checkbox" checked={ShowFinished} /> Show Finished</div>
+        <span className='font-bold'>Save at least two Todos to enable Cloud saving</span>
+        </div>
         <div className="border w-full h-[3px] bg-[#000000]"></div>
         <h2 className='text-lg font-bold mt-4'>Your Todos</h2>
         <div className="todos">
