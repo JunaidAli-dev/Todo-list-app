@@ -85,7 +85,7 @@ function App() {
         </div>
         <div className='flex items-center justify-between'>
         <div><input onChange={toggleFinished} type="checkbox" checked={ShowFinished} /> Show Finished</div>
-        <span className='font-bold'>Save at least two Todos to enable Cloud saving</span>
+        <span className='font-bold md:text-[16px] text-[8px]'>Save at least two Todos to enable Cloud saving</span>
         </div>
         <div className="border w-full h-[3px] bg-[#000000]"></div>
         <h2 className='text-lg font-bold mt-4'>Your Todos</h2>
